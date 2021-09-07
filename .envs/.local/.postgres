@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=backups_operator
+POSTGRES_USER=VzxfJEqxEpVjCmEztnpJxbLkEfNTQxoT
+POSTGRES_PASSWORD=sDcUJVC4Wpx2556wqG0pYbrZ4Y0cKQlMGEfaI8bkuWfUw9pTcycknTUj4aiJHrws
