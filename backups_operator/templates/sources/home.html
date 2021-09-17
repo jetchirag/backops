@@ -1,0 +1,31 @@
+{% extends 'base.html' %} 
+
+
+{% block content %} 
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">User@Host</th>
+      <th scope="col">Jobs</th>
+      <th scope="col">Manage</th>
+    </tr>
+  </thead>
+  <tbody>
+
+{% for server in servers %}
+  <tr>
+      <th scope="row">1</th>
+      <td>{{server.name}}</td>
+      <td>{{ server.ssh_user}}@{{server.ssh_host}}</td>
+      <td>2</td>
+      <td> <a class="btn btn-info" href="{% url 'servers:manage' server.id %}">Manage</a>  </td>
+    </tr>    
+{% endfor %}
+
+  </tbody>
+</table>
+ {% endblock content %}
